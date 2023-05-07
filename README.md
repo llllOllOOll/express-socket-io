@@ -42,3 +42,24 @@ fetch("http://localhost:3000/", {
   .then((res) => res.json())
   .then((data) => console.log(data));
 ```
+
+### About Socket.oi
+
+When building real-time web applications, we often need to use WebSockets to establish a two-way communication channel between the server and the client. Socket.IO is a popular library for enabling real-time, bidirectional, event-based communication between the client and the server.
+
+Express is a popular web application framework that makes building RESTful APIs and web applications a lot easier. Express also provides an easy way to create an HTTP server.
+
+To use Socket.IO with Express, we can simply create a Socket.IO server and attach it to our Express HTTP server. This allows us to serve HTTP requests and WebSocket requests from the same server.
+
+When a client connects to the server using Socket.IO, the client sends an initial HTTP request to establish the WebSocket connection. The server checks the request and decides whether it is an HTTP request or a WebSocket request. If it is an HTTP request, the server responds with an HTTP response. If it is a WebSocket request, the server upgrades the connection to a WebSocket connection and establishes a two-way communication channel with the client.
+
+Once the WebSocket connection is established, the client and server can send data to each other in real-time without the need for constant HTTP requests. This makes it possible to build real-time web applications that respond instantly to user actions.
+
+Overall, using Express with Socket.IO provides a powerful combination for building real-time web applications with ease.
+
+### Testing our Socket.oi server
+
+Use can code a client of course, but in this case I just want to do a simple test. For that we
+can use teh [socketio-tester]("https://www.piesocket.com/socketio-tester")
+
+![socketio](socket-tester.jpg)
