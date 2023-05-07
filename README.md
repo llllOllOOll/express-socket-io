@@ -1,4 +1,4 @@
-## Example using Express.js
+## Example Express.js Socket.oi
 
 In this example, I will use Express.js to create a simple RESTful API. The API should be able to receive and send JSON data to the client. I will use the browser console to accomplish this.
 
